@@ -1,0 +1,116 @@
+<div class="container py-5 contact-us-container">
+  <div class="row justify-content-center align-items-start g-5">
+
+    <!-- Contact Information Section -->
+    <div class="col-lg-5">
+      <h2 class="mb-4 fw-bold">📞 Get In Touch</h2>
+
+      <div class="d-flex align-items-center gap-3 mb-3">
+        <i class="fa-solid fa-location-dot text-warning fs-3"></i>
+        <p class="mb-0">
+          <strong>Head Office</strong><br>
+          Shop No. 6001 to 6014, Raj Textile Market, Godadara, Surat - 395010
+        </p>
+      </div>
+
+      <div class="d-flex align-items-center gap-3 mb-3">
+        <i class="fa-solid fa-phone-volume text-primary fs-3"></i>
+        <p class="mb-0">
+          <strong>Call Us</strong><br>
+          Tel: <a href="tel:0261658188"
+            class="text-decoration-none text-dark">0261-658188 / 6581999</a>
+        </p>
+      </div>
+
+      <div class="d-flex align-items-center gap-3 mb-3">
+        <i class="fa-solid fa-envelope text-danger fs-3"></i>
+        <p class="mb-0">
+          <strong>Email Us</strong><br>
+          <a href="mailto:info@osianstar.com"
+            class="text-decoration-none text-dark fw-semibold">
+            info&#64;osianstar.com
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="col-lg-6">
+      <h2 class="text-center fw-bold mb-4">✍ Contact Us</h2>
+      <form [formGroup]="contactForm"
+        class="p-4 border rounded shadow-lg bg-light">
+
+        <!-- Name Field -->
+        <div class="mb-3">
+          <!-- <label for="name" class="form-label fw-semibold">Name</label> -->
+          <input type="text" formControlName="names" id="name"
+            class="form-control shadow-sm" autocomplete="off"
+            [ngClass]="{'is-invalid' : this.f['names'].touched && this.f['names'].invalid}"
+            maxlength="50"
+            placeholder="Enter your name">
+          <div *ngIf="this.f['names'].invalid && this.f['names'].touched"
+            class="text-danger mt-1">
+            <small *ngIf="this.f['names'].errors?.['required']">
+              ❌ Name is required
+            </small>
+          </div>
+          <div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <!-- <label for="number" class="form-label fw-semibold">Contact
+            Number</label> -->
+          <input type="text" formControlName="number" id="number"
+            class="form-control shadow-sm" autocomplete="off"
+            maxlength="15"
+            placeholder="Enter your phone number with country code"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+        </div>
+
+        <div class="mb-3">
+          <input type="email" formControlName="email" id="email"
+            class="form-control  shadow-sm" autocomplete="off"
+            maxlength="50"
+            [ngClass]="{ 'is-invalid': contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched) }"
+            placeholder="Enter your email">
+          <div
+            *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)"
+            class="text-danger mt-1">
+            <small *ngIf="contactForm.controls['email'].errors?.['required']">
+              ❌ Email is required.
+            </small>
+            <small *ngIf="contactForm.controls['email'].errors?.['email']">
+              ❌ Please enter a valid email address (e.g., exampledomain.com).
+            </small>
+          </div>
+        </div>
+
+        <!-- Message Field -->
+        <div class="mb-3">
+          <!-- <label for="message" class="form-label fw-semibold">Message</label> -->
+          <textarea class="form-control shadow-sm rounded" autocomplete="off"
+            formControlName="message" id="message"
+            rows="4" maxlength="100"
+            placeholder="Write your message..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" (click)="submitform()"
+            class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow">
+            🚀 Send Message
+          </button>
+        </div>
+      </form>
+      <div class="text-center mt-4">
+        <span class="line-with-text headerText" style="color: black">
+          <span class="line-with-text headerText"
+            style="color: black;font-size: 22px;">✨ Our team
+            is ready to assist ✨
+          </span></span>
+      </div>
+    </div>
+
+  </div>
+</div>

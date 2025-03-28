@@ -1,0 +1,150 @@
+<!-- <div class="container-fluid bg-light py-2">
+  <header class="row align-items-center">
+    <div class="col-md-4 d-flex justify-content-start align-items-center"
+      style="font-size: 15px;">
+      <a href="mailto:info@osianstar.com">
+        <i class="fa-solid fa-envelope text-dark me-1"
+          style="font-size: 13px;"></i></a>
+      <a href="mailto:info@osianstar.com"
+        class="text-dark fw-semibold text-decoration-none">
+        info&#64;osianstar.com
+      </a>
+      <span class="mx-2">|</span>
+      <i class="fa-solid fa-phone-volume text-dark me-1"
+        style="font-size: 13px;"></i>
+      <a class="text-dark text-decoration-none"
+        style="font-weight: 500;">
+        +91 92279 84777
+      </a>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-center">
+      <p class="headerText m-0">
+
+        India's Leading Natural Fabric Supplier
+      </div>
+    </header>
+  </div> -->
+
+<div class="container-fluid bg-light py-2 bgHeaderColor">
+  <header class="row align-items-center text-center text-md-start">
+    <!-- Contact Info (Left Section) -->
+    <div
+      class="col-12 col-md-4 d-flex flex-wrap justify-content-center justify-content-md-start align-items-center"
+      style="font-size: 15px;">
+      <a href="mailto:info@osianstar.com">
+        <i class="fa-solid fa-envelope text-dark me-1"
+          style="font-size: 13px;"></i>
+      </a>
+      <a href="mailto:info@osianstar.com"
+        class="text-dark fw-semibold text-decoration-none">
+        info&#64;osianstar.com
+      </a>
+      <span class="mx-2 d-none d-md-inline">|</span>
+      <i class="fa-solid fa-phone-volume text-dark me-1"
+        style="font-size: 13px;"></i>
+      <a href="tel:+919227984777"
+        class="text-dark text-decoration-none fw-semibold">
+        +91 92279 84777
+      </a>
+    </div>
+
+    <!-- Center Text (Middle Section) -->
+    <div class="col-12 col-md-4 text-center mt-2 mt-md-0">
+      <p class="headerText m-0 ">
+        India's Leading Natural Fabric Supplier
+      </p>
+    </div>
+
+    <!-- Social Icons (Right Section) -->
+    <div
+      class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end mt-2 mt-md-0">
+      <a href="#" class="text-dark me-2"><i
+          class="fa-brands fa-facebook"></i></a>
+      <a href="#" class="text-dark me-2"><i
+          class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </header>
+</div>
+
+<nav class="navbar navbar-expand-lg transparent-navbar"
+  [ngClass]="ClassBackGround">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img
+        src="/assets/osianlogo.png"
+        alt="OsianLogo"
+        style="width: 12rem; height: 3rem" />
+    </a>
+    <button id="home-nav-toggle"
+      style="background-color: #2a1770 !important;"
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul
+        class="navbar-nav ms-auto navBarText"
+        style="font-size: medium; font-weight: 400; font-size: small">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"
+            routerLinkActive="activeLink" routerLink="home"
+            [ngClass]="ClassBlack"
+            (click)="toggleNav('home')"
+            (click)="toggleHomeNav($event)">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page"
+            routerLinkActive="activeLink"
+            routerLink="fabric"
+            [ngClass]="ClassBlack"
+            (click)="toggleNav('fabric')"
+            (click)="toggleHomeNav($event)">FABRIC</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page"
+            routerLink="garments"
+            [ngClass]="ClassBlack"
+            (click)="toggleNav('fabric')"
+            (click)="toggleHomeNav($event)"
+            routerLinkActive="activeLink">GARMENTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page"
+            routerLink="laus"
+            [ngClass]="ClassBlack"
+            (click)="toggleNav('fabric')"
+            (click)="toggleHomeNav($event)"
+            routerLinkActive="activeLink">LAUS</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="mensFabric"
+            routerLinkActive="activeLink"
+            (click)="toggleHomeNav($event)">MEN'S
+            FABRIC</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about" aria-current="page"
+            [ngClass]="ClassBlack"
+            (click)="toggleNav('about')"
+            (click)="toggleHomeNav($event)"
+            routerLinkActive="activeLink">ABOUT<span>US</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" aria-current="page"
+            [ngClass]="ClassBlack"
+            (click)="toggleHomeNav($event)"
+            (click)="toggleNav('contact')"
+            routerLinkActive="activeLink">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

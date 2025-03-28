@@ -1,0 +1,5 @@
+const WEBSITE_NAME = 'OSIANSTAR';
+const WEBSITE_VERSION = '1.0.0';
+
+export { WEBSITE_NAME };
+export { WEBSITE_VERSION };

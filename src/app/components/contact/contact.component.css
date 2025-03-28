@@ -1,0 +1,29 @@
+.required::after {
+  content: " *";
+  color: red;
+}
+
+.form-control {
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.25);
+}
+
+.invalid {
+  color: red;
+  font-size: 0.75rem;
+}
+input[readonly] {
+  background-color: #b9b9b9 !important;
+  color: #2a2a2a !important;
+  user-select: none;
+  pointer-events: none;
+}
+
+.contact-us-container {
+  padding-top: 100px !important; /* Adjust based on navbar height */
+}
