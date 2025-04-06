@@ -199,6 +199,13 @@
   margin: 0 10px;
 }
 
+.carouselFont {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .copyright_area {
   background: #edecf0;
   padding: 10px 0;
@@ -212,7 +219,7 @@
 .copyright_area .copyright_text p span {
   color: #feb000;
 }
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .cardWhyOsianStar {
     flex-shrink: 0;
     width: 100% !important;
@@ -222,4 +229,32 @@
     padding-left: 1rem !important;
     margin-top: 1rem !important;
   }
+} */
+
+/* @media (max-width: 501.6px) {
+  .cardWhyOsianStar {
+    flex-shrink: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0rem !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    margin-top: 1rem !important;
+  }
+} */
+
+.carousel-Text-Header {
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.row {
+  --bs-gutter-x: 1.5rem !important;
+  --bs-gutter-y: 0rem;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-top: 1rem !important;
+  margin-right: 1rem !important;
+  margin-left: 1rem !important;
+  margin-bottom: 1rem !important;
 }

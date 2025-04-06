@@ -18,7 +18,7 @@ export class HomeComponent {
   }
 
   clickOnAboutUs() {
-    this.router.navigate(['/about']);
+    this.router.navigate(['/aboutUs']);
   }
   clickOnPlay() {
     window.open('https://www.youtube.com/watch?v=-M0uRHglTXw');

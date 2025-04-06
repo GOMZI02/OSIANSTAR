@@ -9,7 +9,7 @@ import { lausComponent } from './components/laus/laus.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'aboutUs', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'fabric', component: FabricComponent },
   { path: 'garments', component: garmentsComponent },
