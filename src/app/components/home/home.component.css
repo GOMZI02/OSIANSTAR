@@ -178,19 +178,19 @@
   background-color: #007bff;
 } */
 
-.card-Print {
+/* .card-Print {
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
+} */
 
-.card-Print img {
+/* .card-Print img {
   width: 100%;
   display: block;
   height: 14rem;
   transition: transform 0.4sease-in-out;
   object-fit: cover;
-}
+} */
 
 .card-Blog img {
   width: 100%;
@@ -200,14 +200,14 @@
   object-fit: cover;
 }
 
-.card-Print :hover {
+/* .card-Print :hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-Print:hover img {
   transform: scale(1.1);
-}
+} */
 .container-fluid {
   position: relative; /* Ensures absolute positioning works */
   width: 100%;
