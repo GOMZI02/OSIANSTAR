@@ -3,6 +3,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router, RouterModule } from '@angular/router';
 import { WEBSITE_NAME } from '../../webconfig/websitesetting';
+import { NavStateService } from '../../service/nav-state.service';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,11 @@ import { WEBSITE_NAME } from '../../webconfig/websitesetting';
 })
 export class HomeComponent {
   videoStarted = false;
-  constructor(private router: Router, private titleService: Title) {
+  constructor(
+    private router: Router,
+    private titleService: Title,
+    private NavStateService: NavStateService
+  ) {
     this.titleService.setTitle(`${WEBSITE_NAME} Home`);
   }
 
@@ -32,6 +37,7 @@ export class HomeComponent {
     const priorityImage = new Image();
     priorityImage.fetchPriority = 'high';
     priorityImage.src = 'assets/Card/card1car.png';
+    this.NavStateService.toggleNav('home');
   }
 
   @ViewChild('videoPlayer') videoPlayer!: ElementRef;

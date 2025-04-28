@@ -1,33 +1,35 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class NavStateService {
-  private activeLinkSubject = new BehaviorSubject<string>('');
-  private linkClassSubject = new BehaviorSubject<string>('white-links');
-  private bgClassSubject = new BehaviorSubject<string>('');
+  private classBlackSource = new Subject<string>();
+  private classBackgroundSource = new Subject<string>();
 
-  activeLink$ = this.activeLinkSubject.asObservable();
-  linkClass$ = this.linkClassSubject.asObservable();
-  bgClass$ = this.bgClassSubject.asObservable();
+  classBlack$ = this.classBlackSource.asObservable();
+  classBackground$ = this.classBackgroundSource.asObservable();
 
-  // Set the active link
-  setActiveLink(link: string): void {
-    this.activeLinkSubject.next(link);
-    this.setLinkAndBackgroundClasses(link);
-  }
+  toggleNav(clickedItem: string) {
+    let classBlack = '';
+    let classBackground = '';
 
-  // Set link and background classes based on the clicked link
-  private setLinkAndBackgroundClasses(link: string): void {
-    if (link === 'about' || link === 'contact') {
-      this.linkClassSubject.next('black-links');
-      this.bgClassSubject.next('bgLink');
+    if (
+      clickedItem === 'about' ||
+      clickedItem === 'contact' ||
+      clickedItem === 'sister-concern'
+    ) {
+      classBlack = 'black-links';
+      classBackground = 'bgLink';
     } else {
-      this.linkClassSubject.next('white-links');
-      this.bgClassSubject.next('');
+      classBlack = 'white-links';
+      classBackground = '';
     }
+
+    // Emit the updated class names
+    this.classBlackSource.next(classBlack);
+    this.classBackgroundSource.next(classBackground);
   }
 
   constructor() {}

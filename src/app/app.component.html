@@ -1,34 +1,6 @@
-<!-- <div class="container-fluid bg-light py-2">
-  <header class="row align-items-center">
-    <div class="col-md-4 d-flex justify-content-start align-items-center"
-      style="font-size: 15px;">
-      <a href="mailto:info@osianstar.com">
-        <i class="fa-solid fa-envelope text-dark me-1"
-          style="font-size: 13px;"></i></a>
-      <a href="mailto:info@osianstar.com"
-        class="text-dark fw-semibold text-decoration-none">
-        info&#64;osianstar.com
-      </a>
-      <span class="mx-2">|</span>
-      <i class="fa-solid fa-phone-volume text-dark me-1"
-        style="font-size: 13px;"></i>
-      <a class="text-dark text-decoration-none"
-        style="font-weight: 500;">
-        +91 92279 84777
-      </a>
-    </div>
-
-    <div class="col-md-4 d-flex justify-content-center">
-      <p class="headerText m-0">
-
-        India's Leading Natural Fabric Supplier
-      </div>
-    </header>
-  </div> -->
 
 <div class="container-fluid bg-light py-2 bgHeaderColor">
   <header class="row align-items-center text-center text-md-start">
-    <!-- Contact Info (Left Section) -->
     <div
       class="col-12 col-md-4 d-flex flex-wrap justify-content-center justify-content-md-start align-items-center"
       style="font-size: 15px;">
@@ -93,34 +65,48 @@
         class="navbar-nav ms-auto navBarText"
         style="font-size: medium; font-weight: 400; font-size: small">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page"
+          <!-- <a class="nav-link active" aria-current="page"
             routerLinkActive="activeLink" routerLink="home"
             [ngClass]="ClassBlack"
             (click)="toggleNav('home')"
-            (click)="toggleHomeNav($event)">HOME</a>
+            (click)="toggleHomeNav($event)">HOME</a> -->
+          <a class="nav-link active" aria-current="page"
+            routerLinkActive="activeLink" routerLink="home"
+            [ngClass]="[ClassBlack, ClassBackGround]">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page"
+          <!-- <a class="nav-link" aria-current="page"
             routerLinkActive="activeLink"
             routerLink="fabric"
             [ngClass]="ClassBlack"
             (click)="toggleNav('fabric')"
-            (click)="toggleHomeNav($event)">FABRIC</a>
+            (click)="toggleHomeNav($event)">FABRIC</a> -->
+          <a class="nav-link" aria-current="page"
+            routerLinkActive="activeLink"
+            routerLink="fabric"
+            [ngClass]="[ClassBlack, ClassBackGround]">FABRIC</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page"
+          <!-- <a class="nav-link" aria-current="page"
             routerLink="garments"
             [ngClass]="ClassBlack"
             (click)="toggleNav('fabric')"
             (click)="toggleHomeNav($event)"
+            routerLinkActive="activeLink">GARMENTS</a> -->
+          <a class="nav-link" aria-current="page"
+            routerLink="garments" [ngClass]="[ClassBlack, ClassBackGround]"
             routerLinkActive="activeLink">GARMENTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page"
+          <!-- <a class="nav-link" aria-current="page"
             routerLink="laus"
             [ngClass]="ClassBlack"
             (click)="toggleNav('fabric')"
             (click)="toggleHomeNav($event)"
+            routerLinkActive="activeLink">LAUS</a>        -->
+          <a class="nav-link" aria-current="page"
+            routerLink="laus"
+            [ngClass]="[ClassBlack, ClassBackGround]"
             routerLinkActive="activeLink">LAUS</a>
         </li>
         <!-- <li class="nav-item">
@@ -130,19 +116,35 @@
             FABRIC</a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" routerLink="aboutUs" aria-current="page"
+          <!-- <a class="nav-link" routerLink="aboutUs" aria-current="page"
             [ngClass]="ClassBlack"
             (click)="toggleNav('about')"
             (click)="toggleHomeNav($event)"
+            routerLinkActive="activeLink">ABOUT<span>US</span></a> -->
+          <a class="nav-link" routerLink="aboutUs" aria-current="page"
+            [ngClass]="[ClassBlack, ClassBackGround]"
             routerLinkActive="activeLink">ABOUT<span>US</span></a>
         </li>
         <li class="nav-item">
+          <!-- <a class="nav-link" routerLink="contact" aria-current="page"
+            [ngClass]="ClassBlack"
+            (click)="toggleHomeNav($event)"
+            (click)="toggleNav('contact')"
+            routerLinkActive="activeLink">CONTACT</a> -->
           <a class="nav-link" routerLink="contact" aria-current="page"
+            [ngClass]="[ClassBlack, ClassBackGround]"
+            routerLinkActive="activeLink">CONTACT</a>
+        </li>
+        <!-- <li class="nav-item" *ngIf="hideSisterConcern">
+           <a class="nav-link" routerLink="contact" aria-current="page"
             [ngClass]="ClassBlack"
             (click)="toggleHomeNav($event)"
             (click)="toggleNav('contact')"
             routerLinkActive="activeLink">CONTACT</a>
-        </li>
+          <a class="nav-link" routerLink="sister-concern" aria-current="page"
+            [ngClass]="[ClassBlack, ClassBackGround]"
+            routerLinkActive="activeLink">Sister-Concern</a>
+        </li>  -->
       </ul>
     </div>
   </div>

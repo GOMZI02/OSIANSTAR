@@ -14,6 +14,7 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideToastr } from 'ngx-toastr';
 import { WEBSITE_NAME } from '../../webconfig/websitesetting';
 import { Title } from '@angular/platform-browser';
+import { NavStateService } from '../../service/nav-state.service';
 
 @Component({
   selector: 'app-contact',
@@ -33,7 +34,8 @@ export class ContactComponent {
   constructor(
     private fb: FormBuilder,
     private toastr: ToastrService,
-    private titleService: Title
+    private titleService: Title,
+    private NavStateService: NavStateService
   ) {
     this.titleService.setTitle(`${WEBSITE_NAME} Contact`);
   }
@@ -45,6 +47,7 @@ export class ContactComponent {
     // this.f['number'].setValue('81070457575');
     // this.f['email'].setValue('Oswal12@gmail.com');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    this.NavStateService.toggleNav('contact');
   }
 
   loadForm() {

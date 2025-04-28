@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { WEBSITE_NAME } from '../../webconfig/websitesetting';
 import { Title } from '@angular/platform-browser';
-
+import { NavStateService } from '../../service/nav-state.service';
 @Component({
   selector: 'app-fabric',
   standalone: true,
@@ -11,7 +11,11 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './fabric.component.css',
 })
 export class FabricComponent {
-  constructor(private router: Router, private titleService: Title) {
+  constructor(
+    private router: Router,
+    private titleService: Title,
+    private NavStateService: NavStateService
+  ) {
     this.titleService.setTitle(`${WEBSITE_NAME} Fabrics`);
   }
   clickOnContactUs() {
@@ -19,5 +23,6 @@ export class FabricComponent {
   }
   ngOnInit() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    this.NavStateService.toggleNav('fabric');
   }
 }
