@@ -22,7 +22,14 @@ export class AppComponent {
   constructor(
     private router: Router,
     private NavStateService: NavStateService
-  ) {}
+  ) {
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe((event: NavigationEnd) => {
+        // Hide section only on 'sister-concern' route
+        this.showWhySection = !event.url.includes('sister-concern');
+      });
+  }
   ngOnInit() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     this.showOrHideSisterConcern();
@@ -71,6 +78,9 @@ export class AppComponent {
       this.hideSisterConcern = false;
     }
   }
+
+  showWhySection = true;
+
   // toggleHomeNav(event: any) {
   //   let navbutton = document.getElementById('home-nav-toggle');
   //   if (navbutton != undefined && navbutton != null) {
