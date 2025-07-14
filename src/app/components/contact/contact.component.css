@@ -27,3 +27,11 @@ input[readonly] {
 .contact-us-container {
   padding-top: 100px !important; /* Adjust based on navbar height */
 }
+
+.image-container {
+  width: 100%;
+  height: 38rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

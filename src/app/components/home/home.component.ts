@@ -36,7 +36,7 @@ export class HomeComponent {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     const priorityImage = new Image();
     priorityImage.fetchPriority = 'high';
-    priorityImage.src = 'assets/Card/card1car.png';
+    //priorityImage.src = 'assets/Card/card1car.png';
     this.NavStateService.toggleNav('home');
   }
 

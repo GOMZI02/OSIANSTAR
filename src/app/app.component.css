@@ -116,8 +116,10 @@ body {
 .navbar-nav .nav-link.black-links {
   color: rgb(0, 0, 0) !important;
 }
+
 .navbar-nav .nav-link.white-links {
-  color: rgb(255, 255, 255) !important;
+  /* color: rgb(255, 255, 255) !important; */
+  color: #ffffff !important;
 }
 .transparent-navbar.bgLink {
   background: rgb(187, 254, 255) !important;
@@ -130,10 +132,72 @@ body {
 }
 
 .bgHeaderColor {
-  background: rgb(187, 254, 255);
-  background: linear-gradient(
-    84deg,
-    rgba(187, 254, 255, 1) 0%,
-    rgba(255, 242, 173, 1) 100%
-  );
+  background: linear-gradient(to right, #9cddd5, #ffc06f);
+}
+
+header {
+  padding: 0.6rem !important;
+  margin: 0 !important;
+  background-color: #fff; /* Optional: set background */
+}
+
+.header-contact a,
+.header-contact i {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 12px;
+  font-size: 15px;
+}
+
+.headerText {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.social-icons a {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+header a,
+header i {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.cardWhyOsianStar .card {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50% !important;
+  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cardWhyOsianStar .card:hover {
+  transform: scale(1.05);
+}
+
+.cardWhyOsianStar .card h6 {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #393d3d;
+  line-height: 1.2rem;
+}
+
+.cardWhyOsianStar i,
+.cardWhyOsianStar img {
+  font-size: 2.2rem;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }

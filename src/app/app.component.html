@@ -1,44 +1,34 @@
 
-<div class="container-fluid bg-light py-2 bgHeaderColor">
-  <header class="row align-items-center text-center text-md-start">
-    <div
-      class="col-12 col-md-4 d-flex flex-wrap justify-content-center justify-content-md-start align-items-center"
-      style="font-size: 15px;">
-      <a href="mailto:info@osianstar.com">
-        <i class="fa-solid fa-envelope text-dark me-1"
-          style="font-size: 13px;"></i>
-      </a>
-      <a href="mailto:info@osianstar.com"
-        class="text-dark fw-semibold text-decoration-none">
-        info&#64;osianstar.com
-      </a>
-      <span class="mx-2 d-none d-md-inline">|</span>
-      <i class="fa-solid fa-phone-volume text-dark me-1"
-        style="font-size: 13px;"></i>
-      <a href="tel:+919227984777"
-        class="text-dark text-decoration-none fw-semibold">
-        +91 92279 84777
-      </a>
-    </div>
+<header class="row align-items-center text-center text-md-start bgHeaderColor"
+  style="padding: 0.6rem !important; margin: 0 !important; --bs-gutter-y: 0;">
+  <!-- LEFT SECTION -->
+  <div
+    class="col-12 col-md-4 d-flex flex-wrap align-items-center justify-content-center justify-content-md-start gap-3">
+    <a href="mailto:info@osianstar.com"
+      class="text-dark fw-semibold text-decoration-none d-flex align-items-center gap-1">
+      <i class="fa-solid fa-envelope" style="font-size: 13px;"></i>
+      info&#64;osianstar.com
+    </a>
+    <a href="tel:+919227984777"
+      class="text-dark fw-semibold text-decoration-none d-flex align-items-center gap-1">
+      <i class="fa-solid fa-phone-volume" style="font-size: 13px;"></i>
+      +91 92279 84777
+    </a>
+  </div>
 
-    <!-- Center Text (Middle Section) -->
-    <div class="col-12 col-md-4 text-center mt-2 mt-md-0">
-      <p class="headerText m-0 ">
-        India's Leading Natural Fabric Supplier
-      </p>
-    </div>
+  <div
+    class="col-12 col-md-4 d-flex justify-content-center align-items-center mt-2 mt-md-0">
+    <p class="headerText m-0">The heritage of fashion art and creation
+    </p>
+  </div>
 
-    <!-- Social Icons (Right Section) -->
-    <div
-      class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end mt-2 mt-md-0">
-      <a href="#" class="text-dark me-2"><i
-          class="fa-brands fa-facebook"></i></a>
-      <a href="#" class="text-dark me-2"><i
-          class="fa-brands fa-twitter"></i></a>
-      <a href="#" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-  </header>
-</div>
+  <div
+    class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center mt-2 mt-md-0 gap-3">
+    <a href="#" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+</header>
 
 <nav class="navbar navbar-expand-lg transparent-navbar"
   [ngClass]="ClassBackGround">
@@ -65,86 +55,49 @@
         class="navbar-nav ms-auto navBarText"
         style="font-size: medium; font-weight: 400; font-size: small">
         <li class="nav-item">
-          <!-- <a class="nav-link active" aria-current="page"
-            routerLinkActive="activeLink" routerLink="home"
-            [ngClass]="ClassBlack"
-            (click)="toggleNav('home')"
-            (click)="toggleHomeNav($event)">HOME</a> -->
           <a class="nav-link active" aria-current="page"
             routerLinkActive="activeLink" routerLink="home"
             [ngClass]="[ClassBlack, ClassBackGround]">HOME</a>
         </li>
         <li class="nav-item">
-          <!-- <a class="nav-link" aria-current="page"
-            routerLinkActive="activeLink"
-            routerLink="fabric"
-            [ngClass]="ClassBlack"
-            (click)="toggleNav('fabric')"
-            (click)="toggleHomeNav($event)">FABRIC</a> -->
           <a class="nav-link" aria-current="page"
             routerLinkActive="activeLink"
             routerLink="fabric"
             [ngClass]="[ClassBlack, ClassBackGround]">FABRIC</a>
         </li>
         <li class="nav-item">
-          <!-- <a class="nav-link" aria-current="page"
-            routerLink="garments"
-            [ngClass]="ClassBlack"
-            (click)="toggleNav('fabric')"
-            (click)="toggleHomeNav($event)"
-            routerLinkActive="activeLink">GARMENTS</a> -->
           <a class="nav-link" aria-current="page"
             routerLink="garments" [ngClass]="[ClassBlack, ClassBackGround]"
             routerLinkActive="activeLink">GARMENTS</a>
         </li>
         <li class="nav-item">
-          <!-- <a class="nav-link" aria-current="page"
-            routerLink="laus"
-            [ngClass]="ClassBlack"
-            (click)="toggleNav('fabric')"
-            (click)="toggleHomeNav($event)"
-            routerLinkActive="activeLink">LAUS</a>        -->
           <a class="nav-link" aria-current="page"
             routerLink="laus"
             [ngClass]="[ClassBlack, ClassBackGround]"
-            routerLinkActive="activeLink">LAUS</a>
+            routerLinkActive="activeLink">LACE</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="mensFabric"
-            routerLinkActive="activeLink"
-            (click)="toggleHomeNav($event)">MEN'S
-            FABRIC</a>
-        </li> -->
+
         <li class="nav-item">
-          <!-- <a class="nav-link" routerLink="aboutUs" aria-current="page"
-            [ngClass]="ClassBlack"
-            (click)="toggleNav('about')"
-            (click)="toggleHomeNav($event)"
-            routerLinkActive="activeLink">ABOUT<span>US</span></a> -->
+          <a class="nav-link" routerLink="scarves" aria-current="page"
+            [ngClass]="[ClassBlack, ClassBackGround]"
+            routerLinkActive="activeLink">SCARVES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="bags" aria-current="page"
+            [ngClass]="[ClassBlack, ClassBackGround]"
+            routerLinkActive="activeLink">BAGS</a>
+        </li>
+
+        <li class="nav-item">
           <a class="nav-link" routerLink="aboutUs" aria-current="page"
             [ngClass]="[ClassBlack, ClassBackGround]"
             routerLinkActive="activeLink">ABOUT<span>US</span></a>
         </li>
         <li class="nav-item">
-          <!-- <a class="nav-link" routerLink="contact" aria-current="page"
-            [ngClass]="ClassBlack"
-            (click)="toggleHomeNav($event)"
-            (click)="toggleNav('contact')"
-            routerLinkActive="activeLink">CONTACT</a> -->
           <a class="nav-link" routerLink="contact" aria-current="page"
             [ngClass]="[ClassBlack, ClassBackGround]"
             routerLinkActive="activeLink">CONTACT</a>
         </li>
-        <!-- <li class="nav-item" *ngIf="hideSisterConcern">
-           <a class="nav-link" routerLink="contact" aria-current="page"
-            [ngClass]="ClassBlack"
-            (click)="toggleHomeNav($event)"
-            (click)="toggleNav('contact')"
-            routerLinkActive="activeLink">CONTACT</a>
-          <a class="nav-link" routerLink="sister-concern" aria-current="page"
-            [ngClass]="[ClassBlack, ClassBackGround]"
-            routerLinkActive="activeLink">Sister-Concern</a>
-        </li>  -->
       </ul>
     </div>
   </div>
@@ -154,16 +107,18 @@
 <div *ngIf="showWhySection" class="container" id="whyOsianStarContainer">
 
   <h2 class="line-with-text headerText"
-    style="color: black;margin-top: 3rem;">WHY
+    style="color: black;margin-top: 3rem;font-size: 30px;">WHY
     OSIANSTAR</h2>
 
   <div class="row">
-    <div class="row row-cols-1 row-cols-md-3 g-4 cardWhyOsianStar">
+    <div
+      class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4 cardWhyOsianStar">
+      <!-- <div class="row row-cols-1 row-cols-md-3 g-4 cardWhyOsianStar"> -->
       <div class="col">
         <div
           class="card d-flex flex-column align-items-center justify-content-center text-center p-3"
           style="
-            height: 15rem;
+            height: 12rem;
             background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
             border-radius: 1rem;
           ">
@@ -171,7 +126,7 @@
             class="fa-solid fa-shirt"
             style="font-size: 3rem; color: white"></i>
           <h6 class="mt-3  headerText"
-            style="font-size: 24px;color: #393d3d">
+            style="font-size: 15px;color: #393d3d">
             100% Pure Fabric
           </h6>
         </div>
@@ -181,16 +136,16 @@
         <div
           class="card d-flex flex-column align-items-center justify-content-center text-center p-3"
           style="
-            height: 15rem;
+            height: 12rem;
             background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
             border-radius: 1rem;
           ">
           <img
-            src="/assets/Card/sewingLogo.png"
+            src="/assets/HomeBackGround/sewingLogo.png"
             alt="Sewing Logo"
             style="width: 70px; filter: invert(1)" />
-          <h6 class="mt-3  headerText"
-            style="font-size: 24px;color: #393d3d">
+          <h6 class="mt-3 headerText"
+            style="font-size: 15px;color: #393d3d">
             HUB OF FABRIC MANUFACTURING
           </h6>
         </div>
@@ -199,7 +154,7 @@
         <div
           class="card d-flex flex-column align-items-center justify-content-center text-center p-3"
           style="
-            height: 15rem;
+            height: 12rem;
             background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
             border-radius: 1rem;
           ">
@@ -207,8 +162,9 @@
             class="fa-duotone fa-solid fa-vest-patches"
             style="font-size: 3rem; color: white"></i>
           <h6 class="mt-3  headerText"
-            style="font-size: 24px;color: #393d3d">
-            OWN PRINTING DESIGN
+            style="font-size: 15px;color: #393d3d">
+            <!-- OWN PRINTING DESIGN -->
+            DELIVERING QUALITY DESIGN
           </h6>
         </div>
       </div>
@@ -216,16 +172,17 @@
         <div
           class="card d-flex flex-column align-items-center justify-content-center text-center p-3"
           style="
-            height: 15rem;background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+            height: 12rem;background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
             border-radius: 1rem;
           ">
           <img
-            src="/assets/Card/fashion.png"
+            src="/assets/HomeBackGround/fashion.png"
             alt="Sewing Logo"
             style="width: 70px; filter: invert(1)" />
-          <h6 class="mt-3  headerText"
-            style="font-size: 24px;color: #393d3d">
-            Team Of 30+ Designers
+          <h6 class="mt-3 headerText"
+            style="font-size: 15px;color: #393d3d">
+            <!-- Team Of 30+ Designers -->
+            TIME IMPORTANCE
           </h6>
         </div>
       </div>
@@ -233,14 +190,14 @@
         <div
           class="card d-flex flex-column align-items-center justify-content-center text-center p-3"
           style="
-            height: 15rem;background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+            height: 12rem;background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
             border-radius: 1rem;
           ">
           <i
             class="fa-sharp-duotone fa-solid fa-truck-plane"
             style="font-size: 3rem; color: white"></i>
           <h6 class="mt-3  headerText"
-            style="font-size: 24px;color: #393d3d">
+            style="font-size: 15px;color: #393d3d">
             Shipping World Wide
           </h6>
         </div>
@@ -249,15 +206,16 @@
         <div
           class="card d-flex flex-column align-items-center justify-content-center text-center p-3"
           style="
-            height: 15rem;background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+            height: 12rem;background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
             border-radius: 1rem;
           ">
           <i
             class="fa-solid fa-handshake"
             style="font-size: 3rem;color: white;"></i>
           <h6 class="mt-3  headerText"
-            style="font-size: 24px;color: #393d3d">
-            Trusted By High Ends Brands
+            style="font-size: 15px;color: #393d3d">
+            <!-- Trusted By High Ends Brands -->
+            MAINTAINING CUSTOMER RELATIONSHIP
           </h6>
         </div>
       </div>

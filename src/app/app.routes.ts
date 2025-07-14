@@ -6,6 +6,8 @@ import { FabricComponent } from './components/fabric/fabric.component';
 import { garmentsComponent } from './components/garments/garments.component';
 import { lausComponent } from './components/laus/laus.component';
 import { SisterConcernComponent } from './components/sister-concern/sister-concern.component';
+import { ScarvesComponent } from './components/scarves/scarves.component';
+import { BagsComponent } from './components/bags/bags.component';
 // import { MenFabricComponent } from './components/men-fabric/men-fabric.component';
 
 export const routes: Routes = [
@@ -15,6 +17,8 @@ export const routes: Routes = [
   { path: 'fabric', component: FabricComponent },
   { path: 'garments', component: garmentsComponent },
   { path: 'laus', component: lausComponent },
+  { path: 'scarves', component: ScarvesComponent },
+  { path: 'bags', component: BagsComponent },
   { path: 'sister-concern', component: SisterConcernComponent },
   // { path: 'mensFabric', component: MenFabricComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },

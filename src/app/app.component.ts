@@ -43,7 +43,6 @@ export class AppComponent {
 
     this.setInitialNavbarState();
 
-    // Listen for route changes and update the navbar state
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
@@ -53,25 +52,22 @@ export class AppComponent {
 
   private setInitialNavbarState() {
     const currentRoute = this.router.url;
-
     if (
       currentRoute.includes('about') ||
       currentRoute.includes('contact') ||
       currentRoute.includes('sister-concern')
     ) {
-      this.NavStateService.toggleNav('about'); // You can call 'about' for both 'about' and 'contact' pages
+      this.NavStateService.toggleNav('about');
     } else {
-      this.NavStateService.toggleNav(''); // Reset to default
+      this.NavStateService.toggleNav('');
     }
   }
 
   showOrHideSisterConcern() {
-    console.log(this.router.events, '88');
     let routerLinkName = this.router.config;
     let foundrouterlink = routerLinkName.find(
       (x) => x.path == 'sister-concern'
     );
-    console.log(foundrouterlink);
     if (foundrouterlink && foundrouterlink.path === 'sister-concern') {
       this.hideSisterConcern = true;
     } else {

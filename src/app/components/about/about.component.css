@@ -13,7 +13,7 @@
   margin: 0 10px;
 }
 .about-us-container {
-  padding-top: 75px; /* Adjust based on navbar height */
+  padding-top: 23px; /* Adjust based on navbar height */
 }
 
 .leaderShip {
@@ -97,4 +97,12 @@
 .cardFooter .media img {
   margin-right: 10px;
   max-width: 50px;
+}
+
+.image-container {
+  width: 100%;
+  height: 38rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

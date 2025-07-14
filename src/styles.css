@@ -32,12 +32,12 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  padding: 60px;
+  padding: 10px;
 }
-.footer_area .row {
+/* .footer_area .row {
   margin-left: -25px;
   margin-right: -25px;
-}
+} */
 .footer_area .row .col,
 .footer_area .row .col-1,
 .footer_area .row .col-10,
@@ -208,7 +208,6 @@
 
 .copyright_area {
   background: #edecf0;
-  padding: 10px 0;
 }
 .copyright_area .copyright_text {
   text-align: center;

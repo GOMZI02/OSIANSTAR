@@ -592,7 +592,7 @@ body {
 }
 
 .title {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 0.3rem;
 }
@@ -670,12 +670,6 @@ body {
 .text-container {
   max-width: 220px;
   text-align: center;
-}
-
-/* Title and Subtitle */
-.title {
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .subtitle {
@@ -1067,9 +1061,9 @@ img.rounded-circle {
     max-height: 7rem;
   }
 }
-.companyVideoBg {
+/* .companyVideoBg {
   background-image: url("/assets/Card/card1car.png") !important;
-}
+} */
 @media (max-width: 500px) {
   .card[_ngcontent-ng-c662589134][_ngcontent-ng-c662589134] {
     width: 100%;
@@ -1134,4 +1128,83 @@ img.rounded-circle {
   overflow: hidden;
   height: 100%;
   width: 100%;
+}
+
+/* padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 25px;
+    z-index: 999; */
+
+/* .custom-carousel-btn {
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.custom-carousel-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  background-color: white;
+  color: #000000;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.custom-carousel-icon:hover {
+  background-color: #bababa;
+  color: white;
+} */
+
+/* Base button style */
+.custom-carousel-btn {
+  position: absolute !important; /* override Bootstrap */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: none;
+  border: none;
+}
+
+/* Place Previous button on the left */
+.custom-left {
+  left: 1rem;
+}
+
+/* Place Next button on the right */
+.custom-right {
+  right: 1rem;
+}
+
+/* Round icon style */
+.custom-carousel-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  background-color: white;
+  color: #000000;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.custom-carousel-icon:hover {
+  background-color: #bababa;
+  color: white;
+}
+
+.mapDesign {
+  width: 100%;
+  height: 100%;
 }
